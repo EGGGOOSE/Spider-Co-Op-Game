@@ -132,9 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1248902704}
-  - component: {fileID: 1248902706}
   - component: {fileID: 1248902705}
-  - component: {fileID: 1248902707}
   m_Layer: 0
   m_Name: SpawnPlayers
   m_TagString: Untagged
@@ -166,35 +164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1248902702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d141065a3fb1edb4a85a64b407e14ebc, type: 3}
+  m_Script: {fileID: 11500000, guid: 01a51c011b7048c4e918c4b990686574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1248902706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248902702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b41af1325c4ffc4d86606b2ef4e6c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerPrefab:
-    RawGuidValue: e33702c6c8bb4ae4293eb7705b6afde1
---- !u!114 &1248902707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248902702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1199893898, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  minX: -9
+  maxX: 9
 --- !u!1 &1370689763
 GameObject:
   m_ObjectHideFlags: 0
