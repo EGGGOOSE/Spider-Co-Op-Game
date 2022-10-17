@@ -17,12 +17,12 @@ public class PlayerController : EntityBehaviour<IPlayerPositionState>
     void Awake()
     {
         motor = GetComponent<PlayerMotor>();
-        if (BoltNetwork.IsServer)
+        /*if (BoltNetwork.IsServer)
         {
             txtType.text = "Server";
         }
         else
-            txtType.text = "Client";
+            txtType.text = "Client";*/
     }
 
     public override void Attached()
@@ -32,6 +32,12 @@ public class PlayerController : EntityBehaviour<IPlayerPositionState>
         {
             hasControl = true;
         }
+        if (BoltNetwork.IsServer)
+        {
+            txtType.text = "Server";
+        }
+        else
+            txtType.text = "Client";
     }
     void PollReys()
     {

@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Bolt;
-using UdpKit;
-[BoltGlobalBehaviour]
+//[BoltGlobalBehaviour]
 public class SpawnPlayers : GlobalEventListener
 {
-    public float minX, maxX;
-    private bool isServer = false;
+    /*public float minX, maxX;
     void Start()
     {
         Debug.Log(4);
@@ -35,7 +33,7 @@ public class SpawnPlayers : GlobalEventListener
     }
     public override void SceneLoadLocalDone(string scene, IProtocolToken token)
     {
-       
+      
     }
         /*float posX = Random.Range(minX, maxX);
         BoltNetwork.Instantiate(BoltPrefabs.Player, new Vector2(posX, transform.position.y), transform.rotation);*/
